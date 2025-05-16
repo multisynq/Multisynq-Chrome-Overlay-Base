@@ -10,15 +10,6 @@ import engineStart from "./assets/Audio/avatarEnter.wav";
 // Only one user of the app session also stays in the lobby session, to keep the user
 // count in the lobby low. See LobbyRelay in src/Actors.js and src/Pawns.js for an example.
 
-// TODO
-// [x] list sessions
-// [x] new session button
-// [x] single view as relay
-// [ ] show debug badge of game not lobby
-// [ ] hierarchical lobby sessions
-// [ ] unlisted sessions (join directly by name)
-// [ ] lobby/session password (?)
-
 // redirect old session links to lobby
 if (window.location.search.includes("q=")) {
     window.location.href = window.location.href.replace(/\?.*$/, "");
